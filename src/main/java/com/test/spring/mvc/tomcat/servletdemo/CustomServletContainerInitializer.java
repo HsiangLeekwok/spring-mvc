@@ -1,4 +1,4 @@
-package com.test.springmvc.tomcat.servletdemo;
+package com.test.spring.mvc.tomcat.servletdemo;
 
 import javax.servlet.ServletContainerInitializer;
 import javax.servlet.ServletContext;

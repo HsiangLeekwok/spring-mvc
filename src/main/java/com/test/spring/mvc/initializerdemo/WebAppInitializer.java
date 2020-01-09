@@ -1,4 +1,4 @@
-package com.test.springmvc.mvc;
+package com.test.spring.mvc.initializerdemo;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -8,7 +8,7 @@ import javax.servlet.Filter;
  * <b>Author</b>: Xiang Liguo<br/>
  * <b>Date</b>: 2020/01/07 13:56<br/>
  * <b>Version</b>: 1.0<br/>
- * <b>Subject</b>: <br/>
+ * <b>Subject</b>: 自定义的 initializer<br/>
  * <b>Description</b>:
  */
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {

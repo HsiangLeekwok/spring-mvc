@@ -1,4 +1,4 @@
-package com.test.springmvc.tomcat.servletdemo;
+package com.test.spring.mvc.tomcat.servletdemo;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
@@ -13,7 +13,7 @@ import javax.servlet.ServletRegistration;
 public class LoadServiceImpl implements LoadService {
 
     public void loadOnStartup(ServletContext servletContext) {
-        ServletRegistration.Dynamic initServlet = servletContext.addServlet("initServlet", "com.test.springmvc.tomcat.servletdemo.servlets.InitServlet");
+        ServletRegistration.Dynamic initServlet = servletContext.addServlet("initServlet", "com.test.spring.mvc.tomcat.servletdemo.servlets.InitServlet");
         // 指定在 tomcat 启动时即加载，大于等于0的话。
         initServlet.setLoadOnStartup(1);
         // 设置拦截的路径

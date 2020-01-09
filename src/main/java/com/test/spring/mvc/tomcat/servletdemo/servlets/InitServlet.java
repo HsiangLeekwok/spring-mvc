@@ -1,4 +1,4 @@
-package com.test.springmvc.tomcat.servletdemo.servlets;
+package com.test.spring.mvc.tomcat.servletdemo.servlets;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -15,13 +15,13 @@ import java.io.PrintWriter;
  * <b>Subject</b>: <br/>
  * <b>Description</b>:
  */
-public class InitServlet1 extends HttpServlet {
+public class InitServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("======> doget <===========");
         PrintWriter writer=resp.getWriter();
-        writer.write("===> Hello again <===");
+        writer.write("===> Hello <===");
     }
 
     @Override

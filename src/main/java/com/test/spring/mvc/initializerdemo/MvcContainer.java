@@ -1,8 +1,8 @@
-package com.test.springmvc.mvc;
+package com.test.spring.mvc.initializerdemo;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
-import org.springframework.web.servlet.mvc.Controller;
+import org.springframework.stereotype.Controller;
 
 /**
  * <b>Author</b>: Xiang Liguo<br/>
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.Controller;
  * <b>Subject</b>: <br/>
  * <b>Description</b>:
  */
-@ComponentScan(value = "com.test.springmvc.mvc", includeFilters = {
+@ComponentScan(value = "com.test.spring.mvc", includeFilters = {
         // 设置只扫描指定包下带有的 @Controller 注解的类
         @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = {Controller.class})
 })
